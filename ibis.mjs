@@ -10,10 +10,7 @@ async function getTestData(){
 async function txt2data(txt){
     txt = txt? txt : await getTestData()
     let dt = txt.split(/\\n/).map(r=>r.split(/\\t/))
-    dt.forEach(x=>{
-        4
-        
-    })
+    dt = dt.map(r=>r.map(c=>c))
     return dt
 }
 
