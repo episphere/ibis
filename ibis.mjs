@@ -19,3 +19,19 @@ export {
     getTestData,
     txt2data
 }
+
+/*
+
+console.log(`ibis snippet loaded \n ${Date()}`);
+
+async function loadData(url='https://corsproxy.io/?https://ems-trials.org/riskevaluator/software/Windows_x86/v6/example.txt'){
+    let txt = await (await fetch(url)).text()
+    txt = txt.replace(/\\r/g,'')
+    let dt = txt.split(/\\n/)
+        .map(r=>r.split(/\\t/))
+        .map(r=>r.map(c=>c))
+    return dt
+}
+
+*/
+    
